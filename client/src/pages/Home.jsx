@@ -125,7 +125,7 @@ const Home = () => {
         {/* Contenu au-dessus de la vidéo */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center py-8 z-30">
           <div className="max-w-4xl mx-auto text-center w-full">
-            <SlideInAnimation direction="up" delay={0.2}>
+            <SlideInAnimation direction="up" delay={0}>
               <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-4 leading-tight">
                 Votre partenaire comptable
                 <span className="block bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent mt-2">
@@ -137,13 +137,13 @@ const Home = () => {
               </h1>
             </SlideInAnimation>
 
-            <SlideInAnimation direction="up" delay={0.4}>
+            <SlideInAnimation direction="up" delay={0}>
               <p className="text-base md:text-lg text-gray-200 mb-6 max-w-3xl mx-auto leading-relaxed">
                 Cabinet d'expertise comptable à Levallois-Perret. Solutions 100% dématérialisées et accompagnement personnalisé pour TPE et PME.
               </p>
             </SlideInAnimation>
 
-            <FadeInAnimation delay={0.6}>
+            <FadeInAnimation delay={0}>
               <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
                 <Link
                   to="/contact"
@@ -163,7 +163,7 @@ const Home = () => {
             </FadeInAnimation>
 
             {/* Google Reviews Badge */}
-            <FadeInAnimation delay={0.7}>
+            <FadeInAnimation delay={0}>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="backdrop-blur-sm bg-white/10 rounded-lg px-6 py-3 flex items-center gap-3 border border-white/20">
                   <div className="flex flex-col items-start">
@@ -186,7 +186,7 @@ const Home = () => {
             </FadeInAnimation>
 
             {/* Stats avec animation */}
-            <FadeInAnimation delay={0.8}>
+            <FadeInAnimation delay={0}>
               <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
                 <div className="text-center backdrop-blur-sm bg-white/10 rounded-lg p-3 md:p-4">
                   <CounterAnimation

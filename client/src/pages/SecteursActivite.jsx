@@ -36,13 +36,13 @@ const SecteursActivite = () => {
                 </h1>
               </div>
 
-              <div className="animate-slide-in-left" style={{animationDelay: '0.15s'}}>
+              <div className="animate-slide-in-left">
                 <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-lg leading-relaxed">
                   Notre connaissance approfondie des secteurs d'activités nous permet de fournir des solutions comptables et fiscales sur mesure, adaptées aux besoins spécifiques de nos clients dans chaque domaine.
                 </p>
               </div>
 
-              <div className="animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <div className="animate-fade-in">
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
                     to="/contact"
@@ -62,7 +62,7 @@ const SecteursActivite = () => {
               </div>
             </div>
 
-            <div className="animate-slide-in-right" style={{animationDelay: '0.1s'}}>
+            <div className="animate-slide-in-right">
               <div className="relative">
                 <img
                   src="/images/pages/secteurs-page.jpg"

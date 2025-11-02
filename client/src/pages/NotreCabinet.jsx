@@ -23,7 +23,7 @@ const NotreCabinet = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center py-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
             <div>
-              <SlideInAnimation direction="left" delay={0.1}>
+              <SlideInAnimation direction="left" delay={0}>
                 <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
                   Ensemble, construisons un<span className="block bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">partenariat solide</span>
                   <span className="block text-gray-300 text-lg md:text-xl xl:text-2xl mt-2 font-medium">
@@ -32,13 +32,13 @@ const NotreCabinet = () => {
                 </h1>
               </SlideInAnimation>
 
-              <SlideInAnimation direction="left" delay={0.2}>
+              <SlideInAnimation direction="left" delay={0}>
                 <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-lg leading-relaxed">
                   Salomé et Nathan EL-BAZ forment un duo dynamique et complémentaire, unis par leur passion du métier d'expert-comptable.
                 </p>
               </SlideInAnimation>
 
-              <FadeInAnimation delay={0.3}>
+              <FadeInAnimation delay={0}>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
                     to="/contact"
