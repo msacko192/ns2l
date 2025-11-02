@@ -98,7 +98,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-gray-50 to-white py-20">
+      <section className="bg-gradient-to-r from-gray-50 to-white py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInAnimation delay={0.2}>
             <div className="text-center">
@@ -115,7 +115,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Info Section */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
@@ -408,7 +408,7 @@ const Contact = () => {
             <div className="bg-white p-4 rounded-lg shadow-lg">
               <div className="h-80 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://maps.google.com/maps?q=3%20Rue%20Anatole%20France,%2092300%20Levallois-Perret,%20France&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=31%20Rue%20Danton,%2092300%20Levallois-Perret,%20France&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

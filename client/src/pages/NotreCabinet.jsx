@@ -69,12 +69,6 @@ const NotreCabinet = () => {
                   width="600"
                   height="400"
                 />
-                <ScaleInAnimation delay={0.3}>
-                  <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-                    <p className="text-black font-semibold">Cabinet fondé en</p>
-                    <span className="text-3xl font-bold text-black block">2023</span>
-                  </div>
-                </ScaleInAnimation>
               </div>
             </SlideInAnimation>
           </div>
