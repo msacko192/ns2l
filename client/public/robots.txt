@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ns2l-associes.fr/sitemap.xml
+
+# Disallow sensitive areas if any
+# Disallow: /admin/
+
+# Crawl-delay for good SEO practice
+Crawl-delay: 1
