@@ -63,7 +63,7 @@ app.post('/api/send-email', async (c) => {
 
     const serviceLabel = serviceLabels[service] || service
 
-    // Préparer le contenu de l'email pour l'équipe
+    // Préparer le contenu de l'email
     const emailContent = `
     <h2>Nouvelle demande de contact</h2>
 
@@ -86,30 +86,8 @@ app.post('/api/send-email', async (c) => {
     <p><em>Email envoyé depuis le formulaire de contact du site NS2L & Associés</em></p>
     `
 
-    // Email de confirmation à l'utilisateur
-    const confirmationEmailContent = `
-    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-      <p>Bonjour ${prenom},</p>
-
-      <p>Merci pour votre message et l'intérêt que vous portez à notre cabinet NS2L & ASSOCIES.</p>
-
-      <p>Nous avons bien reçu votre demande de contact via notre site internet. Un membre de notre équipe va prendre connaissance de votre situation et reviendra vers vous prochainement afin d'échanger plus en détail sur vos besoins (comptables, fiscaux, juridiques, sociaux, ou de pilotage).</p>
-
-      <p>Si vous souhaitez nous transmettre dès maintenant des précisions complémentaires (statut de votre structure, secteur d'activité, volume de pièces, urgences éventuelles…), vous pouvez répondre directement à cet e-mail.</p>
-
-      <p>Au plaisir d'échanger avec vous,</p>
-
-      <p>Bien cordialement,</p>
-
-      <p><strong>L'équipe NS2L & ASSOCIES</strong><br>
-      Cabinet d'expertise comptable & conseil<br>
-      07 83 69 28 61<br>
-      <a href="http://www.ns2l.com">www.ns2l.com</a></p>
-    </div>
-    `
-
-    // Envoyer l'email de notification à l'équipe NS2L
-    const notificationEmail = await resend.emails.send({
+    // Envoyer l'email via Resend
+    const data = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>', // Remplacez par votre domaine vérifié
       to: ['moussasacko418@gmail.com'], // Email de destination
       subject: `Nouvelle demande de contact - ${prenom} ${nom} (${entreprise})`,
@@ -117,24 +95,12 @@ app.post('/api/send-email', async (c) => {
       replyTo: email
     })
 
-    console.log('Email de notification envoyé avec succès:', notificationEmail)
-
-    // Envoyer l'email de confirmation à l'utilisateur
-    const confirmationEmail = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>', // Remplacez par votre domaine vérifié
-      to: [email],
-      subject: 'REPONSE POST REMPLISSAGE FICHE',
-      html: confirmationEmailContent,
-      replyTo: 'contact@ns2l.com'
-    })
-
-    console.log('Email de confirmation envoyé avec succès:', confirmationEmail)
+    console.log('Email envoyé avec succès:', data)
 
     return c.json({
       success: true,
-      message: 'Emails envoyés avec succès',
-      notificationId: notificationEmail.id,
-      confirmationId: confirmationEmail.id
+      message: 'Email envoyé avec succès',
+      id: data.id
     })
 
   } catch (error) {

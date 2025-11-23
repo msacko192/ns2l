@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/ui/button'
 import { Input } from '../components/ui/input'
 import { Textarea } from '../components/ui/textarea'
@@ -10,6 +11,8 @@ import ScaleInAnimation from '../components/animations/ScaleInAnimation'
 import useSEO from '../hooks/useSEO'
 
 const Contact = () => {
+  const navigate = useNavigate()
+
   useSEO({
     title: "Contact",
     description: "Contactez NS2L & Associés, cabinet d'expertise comptable à Levallois-Perret. Prenez rendez-vous pour une consultation gratuite. Formulaire de contact et coordonnées.",
@@ -59,7 +62,7 @@ const Contact = () => {
 
     try {
       // Envoi vers l'API backend
-      const apiUrl = 'https://api.ns2l.com/api/send-email'
+      const apiUrl = 'http://localhost:3067/api/send-email'
 
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -75,18 +78,8 @@ const Contact = () => {
         throw new Error(result.error || 'Erreur lors de l\'envoi')
       }
 
-      // Succès
-      setIsSubmitted(true)
-      setFormData({
-        nom: '',
-        prenom: '',
-        email: '',
-        telephone: '',
-        entreprise: '',
-        service: '',
-        message: ''
-      })
-      setTimeout(() => setIsSubmitted(false), 5000)
+      // Succès - Redirection vers la page de confirmation
+      navigate('/contact-confirmation')
 
     } catch (error) {
       setError(error.message || 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer.')

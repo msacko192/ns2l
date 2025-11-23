@@ -14,6 +14,9 @@ import Actualites from "./pages/Actualites"
 import ActualiteDetail from "./pages/ActualiteDetail"
 import Avis from "./pages/Avis"
 import Contact from "./pages/Contact"
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite"
+import MentionsLegales from "./pages/MentionsLegales"
+import ContactConfirmation from "./pages/ContactConfirmation"
 import Analytics from "./components/analytics"
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
             <Route path="/actualites/:id" element={<ActualiteDetail />} />
             <Route path="/avis" element={<Avis />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contact-confirmation" element={<ContactConfirmation />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
         </Layout>
       </Router>

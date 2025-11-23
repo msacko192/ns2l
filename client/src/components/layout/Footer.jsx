@@ -210,10 +210,10 @@ const Footer = () => {
               © 2025 NS2L & Associés. Tous droits réservés.
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="/mentions-legales" className="text-gray-400 hover:text-white transition-colors">
                 Mentions légales
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="/politique-confidentialite" className="text-gray-400 hover:text-white transition-colors">
                 Politique de confidentialité
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
