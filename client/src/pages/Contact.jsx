@@ -78,6 +78,27 @@ const Contact = () => {
         throw new Error(result.error || 'Erreur lors de l\'envoi')
       }
 
+      // Vérifier si l'utilisateur a accepté les cookies
+      const cookieConsent = localStorage.getItem('cookieConsent')
+
+      // Envoyer les données au dataLayer si les cookies sont acceptés
+      if (cookieConsent === 'accepted') {
+        window.dataLayer = window.dataLayer || []
+        window.dataLayer.push({
+          event: 'Contact',
+          form_id: 'demande_devis',
+          user_data: {
+            nom: formData.nom,
+            prenom: formData.prenom,
+            email: formData.email,
+            telephone: formData.telephone,
+            entreprise: formData.entreprise,
+            service: formData.service,
+            message: formData.message
+          }
+        })
+      }
+
       // Succès - Redirection vers la page de confirmation
       navigate('/contact-confirmation')
 

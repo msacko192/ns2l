@@ -2,6 +2,7 @@ import React from "react"
 import { useLocation } from "react-router-dom"
 import Header from "./Header-improved"
 import Footer from "./Footer"
+import CookieConsent from "../CookieConsent"
 
 const Layout = ({ children }) => {
   const location = useLocation()
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
+      <CookieConsent />
       <Footer />
     </div>
   )

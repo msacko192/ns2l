@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Tag Manager --> 
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NQ8HT492');</script>
+    <!-- End Google Tag Manager -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TXHSBDCDJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
 
       gtag('config', 'G-3TXHSBDCDJ');
@@ -17,8 +27,10 @@
 
     <!-- SEO Meta Tags -->
     <title>NS2L & Associés - Expert-Comptable Levallois-Perret | Cabinet d'Expertise Comptable</title>
-    <meta name="description" content="Cabinet d'expertise comptable NS2L & Associés à Levallois-Perret. Solutions 100% dématérialisées, accompagnement personnalisé TPE/PME. Salomé et Nathan EL-BAZ, experts-comptables diplômés." />
-    <meta name="keywords" content="expert-comptable, cabinet comptable, Levallois-Perret, expertise comptable, conseil fiscal, TPE, PME, dématérialisé, Pennylane, NS2L" />
+    <meta name="description"
+      content="Cabinet d'expertise comptable NS2L & Associés à Levallois-Perret. Solutions 100% dématérialisées, accompagnement personnalisé TPE/PME. Salomé et Nathan EL-BAZ, experts-comptables diplômés." />
+    <meta name="keywords"
+      content="expert-comptable, cabinet comptable, Levallois-Perret, expertise comptable, conseil fiscal, TPE, PME, dématérialisé, Pennylane, NS2L" />
     <meta name="author" content="NS2L & Associés" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://ns2l-associes.fr" />
@@ -26,7 +38,8 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="NS2L & Associés - Expert-Comptable Levallois-Perret" />
-    <meta property="og:description" content="Cabinet d'expertise comptable moderne à Levallois-Perret. Accompagnement personnalisé pour TPE et PME avec solutions 100% dématérialisées." />
+    <meta property="og:description"
+      content="Cabinet d'expertise comptable moderne à Levallois-Perret. Accompagnement personnalisé pour TPE et PME avec solutions 100% dématérialisées." />
     <meta property="og:url" content="https://ns2l-associes.fr" />
     <meta property="og:site_name" content="NS2L & Associés" />
     <meta property="og:locale" content="fr_FR" />
@@ -34,25 +47,25 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="NS2L & Associés - Expert-Comptable Levallois-Perret" />
-    <meta name="twitter:description" content="Cabinet d'expertise comptable moderne à Levallois-Perret. Solutions 100% dématérialisées pour TPE et PME." />
+    <meta name="twitter:description"
+      content="Cabinet d'expertise comptable moderne à Levallois-Perret. Solutions 100% dématérialisées pour TPE et PME." />
 
     <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy"
-      content="
+    <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
         img-src 'self' data: https:;
         media-src 'self' https://videos.pexels.com https://cdn.pixabay.com https:;
-        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com blob:;
+        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://assets.calendly.com/assets/external/widget.js;
         worker-src 'self' blob:;
         style-src 'self' 'unsafe-inline';
         font-src 'self';
         connect-src 'self' http://localhost:3067 https:;
-        frame-src 'self' https://maps.google.com https://*.google.com https://www.google.com https://www.googletagmanager.com;
-      "
-/>
+        frame-src 'self' https://maps.google.com https://*.google.com https://www.google.com https://www.googletagmanager.com https://calendly.com https://*.calendly.com;
+      " />
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="payment=(self https://calendly.com https://*.calendly.com), camera=(), microphone=(), geolocation=()" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/NS2L.jpg" />
@@ -110,8 +123,16 @@
     }
     </script>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <!-- Google Tag Manager (noscript) --> 
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQ8HT492"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+
 </html>
