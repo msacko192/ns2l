@@ -59,7 +59,7 @@ const Contact = () => {
 
     try {
       // Envoi vers l'API backend
-      const apiUrl = 'http://localhost:3067/api/send-email'
+      const apiUrl = 'https://api.ns2l.com/api/send-email'
 
       const response = await fetch(apiUrl, {
         method: 'POST',

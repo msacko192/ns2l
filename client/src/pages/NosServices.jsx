@@ -26,20 +26,19 @@ const NosServices = () => {
             <div>
               <SlideInAnimation direction="left" delay={0}>
                 <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
-                  Nos
+                  Votre
                   <span className="block bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-                    Expertises Comptables
+                    Gestion comptable, simplifiée
                   </span>
                   <span className="block text-gray-300 text-lg md:text-xl xl:text-2xl mt-2 font-medium">
-                    Solutions complètes et innovantes
+                    Digitalisée, fiable, réactive
                   </span>
                 </h1>
               </SlideInAnimation>
 
               <SlideInAnimation direction="left" delay={0}>
                 <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-lg leading-relaxed">
-                  Des services comptables complets et innovants, adaptés aux défis de votre entreprise moderne.
-                  Découvrez notre gamme complète d'expertises pour vous accompagner à chaque étape.
+                  Avec NS2L, bénéficiez de process connectés, d'échéances maîtrisées et d'un accompagnement pédagogique à chaque étape de votre croissance.
                 </p>
               </SlideInAnimation>
 

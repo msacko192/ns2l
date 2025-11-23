@@ -25,19 +25,18 @@ const Experts = () => {
             <div>
               <SlideInAnimation direction="left" delay={0}>
                 <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
-                  Nos
                   <span className="block bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-                    Experts Comptables
+                    Notre Expert
                   </span>
                   <span className="block text-gray-300 text-lg md:text-xl xl:text-2xl mt-2 font-medium">
-                    Nathan & Salomé EL-BAZ
+                    Salomé EL-BAZ
                   </span>
                 </h1>
               </SlideInAnimation>
 
               <SlideInAnimation direction="left" delay={0}>
                 <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-lg leading-relaxed">
-                  Une équipe d'experts-comptables qualifiés et expérimentés, dédiée à votre accompagnement et à votre réussite. Découvrez l'expertise de Nathan et Salomé EL-BAZ.
+                  Expert-comptable qualifiée, Salomé met son exigence et sa proximité au service de votre réussite, avec un accompagnement clair, réactif et durable. 
                 </p>
               </SlideInAnimation>
 
@@ -85,7 +84,7 @@ const Experts = () => {
                 Une expertise reconnue à votre service
               </h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Nathan et Salomé EL-BAZ forment un duo dynamique et complémentaire, unis par leur passion du métier d'expert-comptable et leur engagement envers l'excellence.
+                Salomé EL-BAZ, experte-comptable engagée, met son expertise et son exigence au service de votre entreprise, avec un accompagnement sur-mesure et tourné vers l'excellence.
               </p>
             </div>
           </FadeInAnimation>
@@ -119,8 +118,8 @@ const Experts = () => {
 
           <FadeInAnimation delay={0.6}>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Nathan et Salomé EL-BAZ sont à votre disposition pour un premier entretien gratuit.
-              Découvrez comment leur expertise peut transformer la gestion de votre entreprise.
+              Salomé EL-BAZ est à votre disposition pour un premier entretien gratuit.
+              Découvrez comment son expertise peut radicalement transformer la gestion de votre entreprise.
             </p>
           </FadeInAnimation>
 

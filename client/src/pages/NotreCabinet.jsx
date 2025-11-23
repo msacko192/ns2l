@@ -34,7 +34,8 @@ const NotreCabinet = () => {
 
               <SlideInAnimation direction="left" delay={0}>
                 <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-lg leading-relaxed">
-                  Salomé et Nathan EL-BAZ forment un duo dynamique et complémentaire, unis par leur passion du métier d'expert-comptable.
+                  Un cabinet proche, une équipe impliquée à vos côtés au quotidien
+                  L'équipe de NS2L vous écoute, simplifie vos démarches et vous guide avec pédagogie pour des décisions sereines et impactantes.
                 </p>
               </SlideInAnimation>
 

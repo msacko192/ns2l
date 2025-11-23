@@ -22,7 +22,7 @@ const Footer = () => {
               NS2L & Associés, votre cabinet d'expertise comptable et d'audit basé à Levallois-Perret.
               Nous accompagnons les TPE et PME avec des solutions modernes et personnalisées.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-4">
               <a href="https://www.linkedin.com/company/ns2l-associes/about/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn NS2L & Associés">
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -32,6 +32,22 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter NS2L & Associés">
                 <Twitter className="h-5 w-5" />
               </a>
+            </div>
+            <div className='flex flex-col justify-between gap-2'>
+              <div className="mb-2">
+              <img
+                src="/oec.png"
+                alt="NS2L & Associés"
+                className="h-16 w-full"
+              />
+            </div>
+            <div className="mb-2">
+              <img
+                src="/cncc.png"
+                alt="NS2L & Associés"
+                className="h-28 w-full"
+              />
+            </div>
             </div>
           </div>
 

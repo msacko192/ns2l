@@ -8,7 +8,7 @@ const app = new Hono()
 
 // Configuration CORS
 app.use('/api/*', cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://www.ns2l.com',
   allowHeaders: ['Content-Type'],
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 }))
@@ -77,7 +77,7 @@ app.post('/api/send-email', async (c) => {
     // Envoyer l'email via Resend
     const data = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>', // Remplacez par votre domaine vérifié
-      to: ['moussasacko418@gmail.com'], // Email de destination
+      to: ['contact@ns2l.com'], // Email de destination
       subject: `Nouvelle demande de contact - ${prenom} ${nom} (${entreprise})`,
       html: emailContent,
       replyTo: email

@@ -10,10 +10,10 @@ export const reviews = [
   },
   {
     id: 2,
-    clientName: "Adam Goldenberg",
+    clientName: "jean luc abeasis",
     clientImage: "/images/client2.jpg",
     rating: 5,
-    comment: "NS2L est un super cabinet. Toujours disponible, réactif et pédagogue, Nathan prend le temps d'expliquer clairement les choses et de donner de très bons conseils. Je me sens vraiment accompagné et en confiance. Encore merci!",
+    comment: "Une approche très professionnelle à base d'écoute réelle du client et de forte réactivité . Des interlocuteurs très sécurisants et très pédagogues . Je recommande vivement !",
     date: "octobre 2025",
     platform: "Google"
   },
@@ -28,10 +28,10 @@ export const reviews = [
   },
   {
     id: 4,
-    clientName: "Eric Ohayon",
+    clientName: "JAFP",
     clientImage: "/images/client4.jpg",
     rating: 5,
-    comment: "Toujours impressionné par le sérieux et la disponibilité de Nathan Elbaz. Plus qu'un expert-comptable, Nathan accompagne véritablement ses clients bien au-delà des bilans avec de la proximité et une vraie valeur de conseil.",
+    comment: "Je tiens à vous exprimer mes sincères compliments pour le professionnalisme et la rigueur dont vous faites preuve dans la gestion des dossiers. Votre cabinet d’expertise comptable se distingue par la qualité de ses conseils, la réactivité, de l’accompagnement personnalisé que vous offrez. Votre expertise et votre dévouement sont des atouts précieux pour nous. Merci pour votre travail exemplaire et votre engagement.",
     date: "octobre 2025",
     platform: "Google"
   },

@@ -115,23 +115,4 @@ export const expertises = [
       "Suivi post-création"
     ]
   },
-  {
-    id: 6,
-    icon: Globe,
-    title: "International",
-    description: "Expertise comptable et fiscale pour vos activités internationales et implantations à l'étranger.",
-    features: [
-      "Prix de transfert",
-      "TVA intracommunautaire",
-      "Filiales étrangères"
-    ],
-    detailDescription: "Notre expertise internationale vous accompagne dans le développement de vos activités à l'étranger. Nous maîtrisons les enjeux fiscaux et comptables liés aux opérations transfrontalières.",
-    advantages: [
-      "Expertise multi-pays",
-      "Gestion des prix de transfert",
-      "Optimisation fiscale internationale",
-      "Accompagnement des expatriés",
-      "Consolidation des comptes"
-    ]
-  }
 ]

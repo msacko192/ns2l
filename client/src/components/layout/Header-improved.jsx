@@ -21,7 +21,7 @@ const Header = () => {
     { name: "Notre Cabinet", path: "/notre-cabinet" },
     { name: "Nos Services", path: "/nos-services" },
     { name: "Secteurs d'Activité", path: "/secteurs-activite" },
-    { name: "Nos Experts", path: "/experts" },
+    { name: "Notre Expert", path: "/experts" },
     { name: "Actualités", path: "/actualites" },
     { name: "Avis Clients", path: "/avis" }
   ]
